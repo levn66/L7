@@ -2,49 +2,51 @@
 
 ```tsx
 import { Marker, MarkerLayer, Scene } from '@antv/l7';
-import { GaodeMap } from '@antv/l7-maps';
+import { GaodeMap, GaodeMapV2, Mapbox } from '@antv/l7-maps';
 import React, { useEffect } from 'react';
 
 export default () => {
   useEffect(() => {
-    const scene = new Scene({
-      id: 'map',
+    const gaodeV1Scene = new Scene({
+      id: 'gaodeV1',
       map: new GaodeMap({
+        center: [105, 30.258134],
+        zoom: 2,
+      }),
+    });
+    const gaodeV2Scene = new Scene({
+      id: 'gaodeV2',
+      map: new GaodeMapV2({
         center: [105, 30.258134],
         zoom: 3,
       }),
     });
-    // addMarkers1(scene);
-    addMarkers2(scene);
+
+    const mapboxScene = new Scene({
+      id: 'mapbox',
+      map: new Mapbox({
+        center: [120, 30],
+        zoom: 2,
+      }),
+    });
+
+    addMarkers(gaodeV1Scene);
+    // addMarkers(gaodeV2Scene);
+    addMarkers(mapboxScene);
   }, []);
 
-  const addMarkers1 = (scene) => {
-    fetch(
-      'https://gw.alipayobjects.com/os/basement_prod/d3564b06-670f-46ea-8edb-842f7010a7c6.json',
-    )
-      .then((res) => res.json())
-      .then((nodes) => {
-        const markerLayer = new MarkerLayer();
-        for (let i = 0; i < 400; i++) {
-          const { coordinates } = nodes.features[i].geometry;
-          const marker = new Marker().setLnglat({
-            lng: coordinates[0],
-            lat: coordinates[1],
-          });
-          markerLayer.addMarker(marker);
-        }
-        scene.addMarkerLayer(markerLayer);
-      });
-  };
+  const nodeNum = 500;
 
-  const addMarkers2 = (scene) => {
+  const addMarkers = (s) => {
+    // 6107个节点
     fetch(
       'https://gw.alipayobjects.com/os/basement_prod/d3564b06-670f-46ea-8edb-842f7010a7c6.json',
     )
       .then((res) => res.json())
       .then((nodes) => {
         const markerLayer = new MarkerLayer();
-        for (let i = 0; i < 400; i++) {
+
+        for (let i = 0; i < nodeNum; i++) {
           const { coordinates } = nodes.features[i].geometry;
           const el = document.createElement('label');
           el.textContent = coordinates[1];
@@ -59,7 +61,12 @@ export default () => {
           });
           markerLayer.addMarker(marker);
         }
-        scene.addMarkerLayer(markerLayer);
+        console.timeEnd('创建节点');
+
+        console.time('节点渲染');
+
+        s.addMarkerLayer(markerLayer);
+        console.timeEnd('节点渲染');
       });
   };
 
@@ -92,13 +99,12 @@ export default () => {
   };
 
   return (
-    <div
-      id="map"
-      style={{
-        height: '500px',
-        position: 'relative',
-      }}
-    />
+    <>
+      <h2>{nodeNum} 个节点测试</h2>
+
+      <h4>高德V1</h4>
+      <div id="gaodeV1" style={{ height: '500px', position: 'relative' }} />
+    </>
   );
 };
 ```
