@@ -2,9 +2,9 @@ exports.ids = [3];
 exports.modules = {
 
 /***/ "../../node_modules/monaco-editor/esm/vs/basic-languages/javascript/javascript.js":
-/*!*********************************************************************************************************************!*\
-  !*** /Users/yiqianyao/workspace/L7-dumi/node_modules/monaco-editor/esm/vs/basic-languages/javascript/javascript.js ***!
-  \*********************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** /Users/caomengyuan/Documents/workspace/L7/node_modules/monaco-editor/esm/vs/basic-languages/javascript/javascript.js ***!
+  \****************************************************************************************************************************/
 /*! exports provided: conf, language */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -88,9 +88,9 @@ var language = {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/basic-languages/typescript/typescript.js":
-/*!*********************************************************************************************************************!*\
-  !*** /Users/yiqianyao/workspace/L7-dumi/node_modules/monaco-editor/esm/vs/basic-languages/typescript/typescript.js ***!
-  \*********************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** /Users/caomengyuan/Documents/workspace/L7/node_modules/monaco-editor/esm/vs/basic-languages/typescript/typescript.js ***!
+  \****************************************************************************************************************************/
 /*! exports provided: conf, language */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
