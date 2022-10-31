@@ -18,6 +18,9 @@ export * from './control/scale';
 export * from './popup/popup';
 export * from './popup/layerPopup';
 
+// 为了兼容老版 LayerSwitch
+export * from './control/layer';
+
 export { Marker, MarkerLayer };
 
 export * from './interface';
