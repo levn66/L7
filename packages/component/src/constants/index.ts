@@ -73,3 +73,15 @@ export const MapboxMapStyleConfig = {
       'https://gw.alipayobjects.com/mdn/rms_816329/afts/img/A*gXFLRIaBUI0AAAAAAAAAAAAAARQnAQ',
   },
 };
+
+export const TiandituLayerType = {
+  // 矢量底图
+  normal: '//t{0-4}.tianditu.gov.cn/DataServer?T=vec_w&X={x}&Y={y}&L={z}&tk={tk}', // &tk=6557fd8a19b09d6e91ae6abf9d13ccbd,
+  // 矢量注记
+  cva: '//t{0-4}.tianditu.gov.cn/DataServer?T=cva_w&X={x}&Y={y}&L={z}',
+  // 影像底图
+  satellite:
+    '//t{0-4}.tianditu.gov.cn/DataServer?T=img_w&X={x}&Y={y}&L={z}',
+  // 影像注记
+  cia: '//t{0-4}.tianditu.gov.cn/DataServer?T=cia_w&X={x}&Y={y}&L={z}',
+};

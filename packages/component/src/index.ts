@@ -17,6 +17,7 @@ export * from './control/zoom';
 export * from './control/scale';
 export * from './popup/popup';
 export * from './popup/layerPopup';
+export * from './raster/tiandituLayer';
 
 export { Marker, MarkerLayer };
 
