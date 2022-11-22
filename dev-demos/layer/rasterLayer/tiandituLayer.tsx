@@ -1,7 +1,7 @@
 import {
   GaodeMap,
   Scene,
-  TiandituLayer
+  TiandituLayer,
   // anchorType,
 } from '@antv/l7';
 import React from 'react';
@@ -35,8 +35,8 @@ const Demo: FunctionComponent = () => {
 
       const tiandituLayer3 = new TiandituLayer({
         type: 'normal',
-        token: '6557fd8a19b09d6e91ae6abf9d13ccbd'
-      })
+        token: '6557fd8a19b09d6e91ae6abf9d13ccbd',
+      });
       newScene.addLayer(tiandituLayer3.layer);
     });
   }, []);
