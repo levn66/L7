@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_antv_l7_site=self.webpackChunk_antv_l7_site||[]).push([[5121],{54165:function(t,e,s){s.r(e);var h=s(7337),i=s(1876),n=(s(41398),s(46228));e.default=function(){return(0,n.jsxs)("div",{style:{height:"100vh"},children:[(0,n.jsx)(i.h,{}),(0,n.jsx)("iframe",{src:"https://l7editor.antv.antgroup.com/",height:"650",width:"100%"}),(0,n.jsx)(h.$,{})]})}}}]);
