@@ -133,8 +133,8 @@ export interface IStyleAttributeInitializationOptions {
   type: AttributeType;
   scale?: {
     field: StyleAttributeField;
-    values: unknown[] | string;
-    defaultValues: unknown[] | string;
+    values: Array<unknown> | string;
+    defaultValues: Array<unknown> | string;
     names: string[] | number[];
     type: StyleScaleType;
     callback?: (...args: any[]) => [];
@@ -145,7 +145,7 @@ export interface IStyleAttributeInitializationOptions {
 
 export interface IScaleValue {
   field: StyleAttributeField | undefined;
-  values: unknown[] | string | undefined;
+  values: Array<unknown> | string | undefined;
   callback?: (...args: any[]) => [] | undefined;
 }
 
@@ -163,7 +163,7 @@ export interface IStyleAttribute extends IStyleAttributeInitializationOptions {
    * 保存渲染层 IAttribute 引用
    */
   vertexAttribute: IAttribute;
-  mapping?(...params: unknown[]): unknown[];
+  mapping?(...params: Array<unknown>): Array<unknown>;
   setProps(props: Partial<IStyleAttributeInitializationOptions>): void;
   resetDescriptor(): void;
 }

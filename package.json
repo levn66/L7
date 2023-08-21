@@ -5,6 +5,9 @@
     "type": "git",
     "url": "https://github.com/antvis/L7"
   },
+  "peerDependencies": {
+    "dumi": "^2.2.6"
+  },
   "devDependencies": {
     "@antv/g2": "^4.2.8",
     "@antv/l7-draw": "^3.0.9",
@@ -78,7 +81,7 @@
     "cz-conventional-changelog": "^3.0.2",
     "dat.gui": "^0.7.2",
     "district-data": "^0.0.7",
-    "dumi": "^1.1.0",
+    "dumi": "^2.2.6",
     "element-remove": "^1.0.4",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
@@ -172,7 +175,7 @@
     "site:publish": "lerna --scope @antv/l7-site exec yarn run site:publish",
     "async-site": "sh ./scripts/site.sh",
     "prebuild": "yarn clean && run-p tsc lint",
-    "build": " yarn worker && lerna run build",
+    "build": " yarn worker && pnpm -r run build",
     "postbuild": "yarn build:declarations",
     "build:declarations": "lerna run tsc --stream --no-bail",
     "lint:tslint": "tslint -p tsconfig.json -c tslint.prod.json",
@@ -204,7 +207,8 @@
     "worker:watch": "cross-env BABEL_ENV=bundle NODE_ENV=production yarn rollup -c build/rollup.config.worker.js --environment BUILD:development --watch",
     "clean": "lerna run clean --parallel",
     "clear-node-modules": "rimraf node_modules && lerna clean -y",
-    "sync": "lerna run sync --parallel"
+    "sync": "lerna run sync --parallel",
+    "prepare": "dumi setup"
   },
   "workspaces": [
     "packages/*",

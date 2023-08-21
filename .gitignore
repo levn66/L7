@@ -90,3 +90,7 @@ docs-dist
 /packages/leaflet
 site_temp
 /packages/site/server
+
+.dumi/tmp
+.dumi/tmp-test
+.dumi/tmp-production

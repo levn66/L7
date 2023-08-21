@@ -1,6 +1,7 @@
 import { Link,} from 'dumi';
 import 'dumi/theme-default/slots/Logo/index.less';
-import React, { type FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 
 interface logoProps {
   url: string;

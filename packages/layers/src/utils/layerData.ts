@@ -126,7 +126,7 @@ function applyAttributeMapping(
     return [];
   }
   const scalers = attribute?.scale?.scalers || [];
-  const params: unknown[] = [];
+  const params: Array<unknown> = [];
 
   scalers.forEach(({ field }) => {
     if (record.hasOwnProperty(field) || attribute.scale?.type === 'variable') {

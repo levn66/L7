@@ -1530,8 +1530,8 @@ export default class BaseLayer<ChildLayerStyleOptions = {}>
     }
   }
   protected splitValuesAndCallbackInAttribute(
-    valuesOrCallback?: unknown[],
-    defaultValues?: unknown[],
+    valuesOrCallback?: Array<unknown>,
+    defaultValues?: Array<unknown>,
   ) {
     return {
       values: isFunction(valuesOrCallback)

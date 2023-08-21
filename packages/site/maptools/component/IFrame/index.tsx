@@ -1,4 +1,5 @@
-import React, { type FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 import 'dumi/theme-default/slots/Navbar/index.less';
 
 function update(iframe) {

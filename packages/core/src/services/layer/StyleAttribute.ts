@@ -20,8 +20,8 @@ export default class StyleAttribute implements IStyleAttribute {
     type: StyleScaleType.CONSTANT;
     names: string[];
     field: string | string[];
-    values: unknown[];
-    defaultValues: unknown[];
+    values: Array<unknown>;
+    defaultValues: Array<unknown>;
     callback?: (...args: any[]) => [];
     scalers?: IAttributeScale[];
   };
@@ -50,7 +50,7 @@ export default class StyleAttribute implements IStyleAttribute {
     Object.assign(this, options);
   }
 
-  public mapping(params: unknown[]): unknown[] {
+  public mapping(params: Array<unknown>): Array<unknown> {
     /**
      * 当用户设置的 callback 返回 null 时, 应该返回默认 callback 中的值
      */
@@ -72,7 +72,7 @@ export default class StyleAttribute implements IStyleAttribute {
     }
   }
 
-  private defaultCallback = (params: unknown[]): unknown[] => {
+  private defaultCallback = (params: Array<unknown>): Array<unknown> => {
     // 没有 params 的情况，是指没有指定 fields，直接返回配置的 values 常量
     if (params.length === 0) {
       return this.scale?.defaultValues || [];

@@ -32,7 +32,8 @@
       "@antv/l7-test-utils":["packages/test-utils/src"],
       "@antv/l7": ["packages/l7/src"],
       "@antv/l7-leaflet": ["packages/leaflet/src"],
-      "*": ["packages", "typings/*"]
+      "*": ["packages", "typings/*"],
+      "@@/*": [".dumi/tmp/*"]
     }
   },
   "include": ["packages"],

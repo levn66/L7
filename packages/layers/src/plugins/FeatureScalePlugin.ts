@@ -221,7 +221,7 @@ export default class FeatureScalePlugin implements ILayerPlugin {
   private createScale(
     field: string | number,
     name: string,
-    values: unknown[] | string | undefined,
+    values: Array<unknown> | string | undefined,
     data?: IParseDataItem[],
   ): IStyleScale {
     // scale 支持根据视觉通道和字段

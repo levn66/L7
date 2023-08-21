@@ -1,1 +1,2 @@
-export { version } from '../package.json';
+const version = '2.17.8';
+export { version };

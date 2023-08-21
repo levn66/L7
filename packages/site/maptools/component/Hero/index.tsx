@@ -1,7 +1,8 @@
 import { Link } from 'dumi';
 import 'dumi/theme-default/slots/Hero/index.less';
 import HeroTitle from 'dumi/theme/slots/HeroTitle';
-import React, { type FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 const Hero: FC = () => {
   const frontmatter = {
     hero: {
