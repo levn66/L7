@@ -1,4 +1,4 @@
-import { pull } from 'lodash';
+import { pull } from 'lodash-es';
 import { $window } from './mini-adapter';
 
 export type ELType = HTMLElement | SVGElement;

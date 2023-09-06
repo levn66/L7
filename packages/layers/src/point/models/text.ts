@@ -13,7 +13,7 @@ import {
   padBounds,
   rgb2arr,
 } from '@antv/l7-utils';
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 import BaseModel from '../../core/BaseModel';
 import { IPointLayerStyleOptions } from '../../core/interface';
 import CollisionIndex from '../../utils/collision-index';

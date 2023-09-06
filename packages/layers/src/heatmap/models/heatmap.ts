@@ -25,7 +25,7 @@ import heatmapColorVert from '../shaders/heatmap_vert.glsl';
 import heatmapFramebufferFrag from '../shaders/heatmap_framebuffer_frag.glsl';
 import heatmapFramebufferVert from '../shaders/heatmap_framebuffer_vert.glsl';
 
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 import { heatMap3DTriangulation } from '../triangulation';
 @injectable()
 export default class HeatMapModel extends BaseModel {

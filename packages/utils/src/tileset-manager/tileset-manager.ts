@@ -1,5 +1,5 @@
 import EventEmitter from 'eventemitter3';
-import { throttle } from 'lodash';
+import { throttle } from 'lodash-es';
 import {
   BOUNDS_BUFFER_SCALE,
   DEFAULT_CACHE_SCALE,

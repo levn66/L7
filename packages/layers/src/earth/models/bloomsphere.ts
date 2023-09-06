@@ -5,7 +5,7 @@ import {
   IModel,
   IModelUniform,
 } from '@antv/l7-core';
-import { isNumber } from 'lodash';
+import { isNumber } from 'lodash-es';
 
 import BaseModel from '../../core/BaseModel';
 import { earthOuterTriangulation } from '../../core/triangulation';

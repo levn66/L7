@@ -5,16 +5,16 @@ import {
   TYPES,
 } from '@antv/l7-core';
 import {
-  bindAll,
-  boundsContains,
   DOM,
   IBounds,
-  padBounds,
   Satistics,
+  bindAll,
+  boundsContains,
+  padBounds,
 } from '@antv/l7-utils';
 import { EventEmitter } from 'eventemitter3';
 import { Container } from 'inversify';
-import { merge } from 'lodash';
+import { merge } from 'lodash-es';
 // @ts-ignore
 // tslint:disable-next-line:no-submodule-imports
 import Supercluster from 'supercluster/dist/supercluster';

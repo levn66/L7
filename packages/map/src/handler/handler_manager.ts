@@ -1,18 +1,18 @@
 // @ts-ignore
 // tslint:disable-next-line: no-submodule-imports
 import { $window, isMini } from '@antv/l7-utils';
-import { merge } from 'lodash';
+import { merge } from 'lodash-es';
 import { EarthMap } from '../earthmap';
 import Point from '../geo/point';
 import { Map } from '../map';
 import DOM from '../utils/dom';
+import { IHandler, IHandlerResult } from './IHandler';
 import BlockableMapEventHandler from './blockable_map_event';
 import BoxZoomHandler from './box_zoom';
 import ClickZoomHandler from './click_zoom';
 import { Event } from './events/event';
 import RenderFrameEvent from './events/render_event';
 import HandlerInertia from './handler_inertia';
-import { IHandler, IHandlerResult } from './IHandler';
 import KeyboardHandler from './keyboard';
 import MapEventHandler from './map_event';
 import {

@@ -4,7 +4,7 @@
  * @see https://zhuanlan.zhihu.com/p/67484498
  */
 
-import { clamp } from 'lodash';
+import { clamp } from 'lodash-es';
 import { getShapeIndex } from './sdf-2d';
 
 export interface ICircleVertex {

@@ -15,7 +15,7 @@ import {
 import { Version } from '@antv/l7-maps';
 import { normalize, rgb2arr } from '@antv/l7-utils';
 import { inject, injectable } from 'inversify';
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 import 'reflect-metadata';
 import { ILineLayerStyleOptions } from '../core/interface';
 

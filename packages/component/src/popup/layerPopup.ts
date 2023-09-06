@@ -1,7 +1,7 @@
 import { ILayer, IPopupOption } from '@antv/l7-core';
 import { DOM } from '@antv/l7-utils';
 import { Container } from 'inversify';
-import { get } from 'lodash';
+import { get } from 'lodash-es';
 // import { Container } from 'inversify';
 import Popup from './popup';
 

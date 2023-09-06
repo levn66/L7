@@ -1,6 +1,6 @@
 // @ts-ignore
 import { EventEmitter } from 'eventemitter3';
-import { merge } from 'lodash';
+import { merge } from 'lodash-es';
 import { IPaddingOptions } from './geo/edge_insets';
 import LngLat, { LngLatLike } from './geo/lng_lat';
 import LngLatBounds, { LngLatBoundsLike } from './geo/lng_lat_bounds';

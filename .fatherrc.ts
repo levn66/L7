@@ -7,9 +7,9 @@ export default {
     output: 'lib',
   },
   transformer: 'babel',
-  autoprefixer: {
-    browsers: ['IE 11', 'last 2 versions'],
-  },
+  // autoprefixer: {
+  //   browsers: ['IE 11', 'last 2 versions'],
+  // },
   extraBabelPresets: ['@babel/preset-typescript'],
   extraBabelPlugins: [
     // 开发模式下以原始文本引入，便于调试

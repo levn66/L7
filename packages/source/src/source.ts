@@ -11,15 +11,15 @@ import {
   ITransform,
 } from '@antv/l7-core';
 import {
+  SourceTile,
+  TilesetManager,
   bBoxToBounds,
   extent,
   padBounds,
-  SourceTile,
-  TilesetManager,
 } from '@antv/l7-utils';
 import { BBox } from '@turf/helpers';
 import { EventEmitter } from 'eventemitter3';
-import { cloneDeep, isFunction, isString, mergeWith } from 'lodash';
+import { cloneDeep, isFunction, isString, mergeWith } from 'lodash-es';
 // @ts-ignore
 // tslint:disable-next-line:no-submodule-imports
 import Supercluster from 'supercluster/dist/supercluster';

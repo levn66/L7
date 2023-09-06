@@ -7,6 +7,17 @@ export default {
   cjs: {
     output:'lib'
   },
+  umd: {
+    entry: 'src/index', // 默认构建入口文件
+    output:'dist',
+    name:'L7',
+    externals:{
+      'mapbox-gl': 'mapboxgl',
+    },
+    chainWebpack: (memo, { env, webpack, createCSSRule }) => {
+      // 设置 alias
+    },
+  },
   autoprefixer: {
     browsers: ['IE 11', 'last 2 versions'],
   },

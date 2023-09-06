@@ -1,5 +1,5 @@
 import { Point } from '@antv/l7-core';
-import { isNaN } from 'lodash';
+import { isNaN } from 'lodash-es';
 import { createL7Icon } from '../utils/icon';
 import ButtonControl, {
   IButtonControlOption,

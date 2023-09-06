@@ -16,9 +16,6 @@
     "less": "lessc src/css/index.less src/css/index.css",
     "clean": "rimraf dist; rimraf es; rimraf lib;",
     "build": "father build",
-    "build:cjs": "BABEL_ENV=cjs babel src --root-mode upward --out-dir lib --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments",
-    "build:esm": "BABEL_ENV=esm babel src --root-mode upward --out-dir es --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments",
-    "watch": "BABEL_ENV=cjs babel src --watch --root-mode upward --out-dir lib --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments",
     "lint:ts": "run-p -c lint:ts-*",
     "test": "umi-test --passWithNoTests",
     "sync": "tnpm sync"
@@ -31,7 +28,7 @@
     "@babel/runtime": "^7.7.7",
     "eventemitter3": "^4.0.0",
     "inversify": "^5.0.1",
-    "lodash": "^4.17.15",
+    "lodash-es": "^4.17.15",
     "reflect-metadata": "^0.1.13",
     "supercluster": "^7.0.0"
   },

@@ -1,5 +1,5 @@
 import { injectable } from 'inversify';
-import { isNil } from 'lodash';
+import { isNil } from 'lodash-es';
 import 'reflect-metadata';
 import blur from '../../../../shaders/post-processing/blur.glsl';
 import quad from '../../../../shaders/post-processing/quad.glsl';

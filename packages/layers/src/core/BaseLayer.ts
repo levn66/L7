@@ -40,8 +40,8 @@ import {
   IPass,
   IPickingService,
   IPostProcessingPass,
-  IRendererService,
   IRenderOptions,
+  IRendererService,
   IScale,
   IScaleOptions,
   IShaderModuleService,
@@ -50,12 +50,12 @@ import {
   IStyleAttributeUpdateOptions,
   ITextureService,
   LayerEventType,
-  lazyInject,
   LegendItems,
   StyleAttributeField,
   StyleAttributeOption,
-  Triangulation,
   TYPES,
+  Triangulation,
+  lazyInject,
 } from '@antv/l7-core';
 import Source from '@antv/l7-source';
 import { encodePickingColor } from '@antv/l7-utils';
@@ -68,7 +68,7 @@ import {
   isObject,
   isPlainObject,
   isUndefined,
-} from 'lodash';
+} from 'lodash-es';
 import { BlendTypes } from '../utils/blend';
 import { calculateData } from '../utils/layerData';
 import {

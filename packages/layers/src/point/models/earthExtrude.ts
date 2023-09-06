@@ -6,7 +6,7 @@ import {
   IModel,
 } from '@antv/l7-core';
 import { calculateCentroid, getCullFace, rgb2arr } from '@antv/l7-utils';
-import { isNumber } from 'lodash';
+import { isNumber } from 'lodash-es';
 import BaseModel from '../../core/BaseModel';
 import { IPointLayerStyleOptions } from '../../core/interface';
 import { PointExtrudeTriangulation } from '../../core/triangulation';

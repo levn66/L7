@@ -9,7 +9,7 @@ import {
   TYPES,
 } from '@antv/l7-core';
 import { SourceTile, TilesetManager } from '@antv/l7-utils';
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 import { TileLayerService } from '../service/TileLayerService';
 import { TilePickService } from '../service/TilePickService';
 import { ProxyFuncs } from '../style/constants';

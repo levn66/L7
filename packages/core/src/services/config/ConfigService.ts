@@ -1,6 +1,6 @@
 // import Ajv from 'ajv';
 import { injectable } from 'inversify';
-import { merge } from 'lodash';
+import { merge } from 'lodash-es';
 import 'reflect-metadata';
 import {
   ILayerAttributesOption,

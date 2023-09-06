@@ -1,7 +1,7 @@
 import { $window, rgb2arr } from '@antv/l7-utils';
 import { EventEmitter } from 'eventemitter3';
 import { inject, injectable } from 'inversify';
-import { throttle } from 'lodash';
+import { throttle } from 'lodash-es';
 import 'reflect-metadata';
 import { TYPES } from '../../types';
 import Clock from '../../utils/clock';

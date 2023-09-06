@@ -7,7 +7,7 @@ import {
   ITexture2D,
 } from '@antv/l7-core';
 import { generateColorRamp, IColorRamp } from '@antv/l7-utils';
-import { isNumber } from 'lodash';
+import { isNumber } from 'lodash-es';
 import BaseModel from '../../core/BaseModel';
 import { ILineLayerStyleOptions, LinearDir } from '../../core/interface';
 import { LineTriangulation } from '../../core/triangulation';

@@ -1,5 +1,5 @@
 import { $window, DOM, isMini } from '@antv/l7-utils';
-import { merge } from 'lodash';
+import { merge } from 'lodash-es';
 import Camera from './camera';
 import './css/l7.css';
 import LngLat, { LngLatLike } from './geo/lng_lat';

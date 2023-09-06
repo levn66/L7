@@ -2,7 +2,7 @@
 import Point from '../geo/point';
 
 // tslint:disable-next-line:no-submodule-imports
-import merge from 'lodash/merge';
+import { merge } from 'lodash-es';
 import { EarthMap } from '../earthmap';
 import { Map } from '../map';
 import { bezier, clamp, now } from '../util';

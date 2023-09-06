@@ -12,11 +12,11 @@ export * from './services/asset/IFontService';
 export * from './services/asset/IIconService';
 export * from './services/asset/ITextureService';
 export * from './services/camera/ICameraService';
-export * from './services/component/control/control';
-export * from './services/component/control/logo';
 export * from './services/component/IControlService';
 export * from './services/component/IMarkerService';
 export * from './services/component/IPopupService';
+export * from './services/component/control/control';
+export * from './services/component/control/logo';
 export * from './services/config/IConfigService';
 export * from './services/coordinate/ICoordinateSystemService';
 export * from './services/debug/IDebugService';
@@ -42,18 +42,18 @@ export * from './services/scene/ISceneService';
 export * from './services/shader/IShaderModuleService';
 export * from './services/source/ISourceService';
 export {
+  BasePostProcessingPass,
+  /**
+   * 各个 Service 接口标识符
+   */
+  TYPES,
   container,
-  createSceneContainer,
   createLayerContainer,
+  createSceneContainer,
   /**
    * lazy inject，供各个 Layer 使用
    */
   lazyInject,
   lazyMultiInject,
-  /**
-   * 各个 Service 接口标识符
-   */
-  TYPES,
   packCircleVertex,
-  BasePostProcessingPass,
 };

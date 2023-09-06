@@ -7,7 +7,7 @@ import {
   ITexture2D,
 } from '@antv/l7-core';
 import { Version } from '@antv/l7-maps';
-import { isNumber } from 'lodash';
+import { isNumber } from 'lodash-es';
 import BaseModel from '../../core/BaseModel';
 import { IPolygonLayerStyleOptions } from '../../core/interface';
 import { polygonTriangulation } from '../../core/triangulation';

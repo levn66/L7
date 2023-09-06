@@ -78,4 +78,4 @@ if (typeof window === 'undefined') {
   globalWindow = window;
 }
 
-export { globalWindow, getGlobalThis, l7globalThis };
+export { getGlobalThis, globalWindow, l7globalThis };

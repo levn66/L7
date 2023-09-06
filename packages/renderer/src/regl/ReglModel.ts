@@ -9,7 +9,7 @@ import {
   IUniform,
 } from '@antv/l7-core';
 import regl from 'l7regl';
-import { isPlainObject, isTypedArray } from 'lodash';
+import { isPlainObject, isTypedArray } from 'lodash-es';
 import {
   blendEquationMap,
   blendFuncMap,

@@ -17,7 +17,7 @@ import { extent } from 'd3-array';
 import * as d3interpolate from 'd3-interpolate';
 import * as d3 from 'd3-scale';
 import { injectable } from 'inversify';
-import { isNil, isString, uniq } from 'lodash';
+import { isNil, isString, uniq } from 'lodash-es';
 import 'reflect-metadata';
 import identity from '../utils/identityScale';
 

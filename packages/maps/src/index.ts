@@ -8,4 +8,4 @@ import Mapbox from './mapbox/';
 import { Version } from './version';
 
 export * from './utils';
-export { Version, GaodeMap, GaodeMapV1, GaodeMapV2, Mapbox, Map, Earth };
+export { Earth, GaodeMap, GaodeMapV1, GaodeMapV2, Map, Mapbox, Version };

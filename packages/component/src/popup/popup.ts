@@ -8,10 +8,10 @@ import {
   TYPES,
 } from '@antv/l7-core';
 import {
+  DOM,
   anchorTranslate,
   anchorType,
   applyAnchorClass,
-  DOM,
 } from '@antv/l7-utils';
 import { EventEmitter } from 'eventemitter3';
 import { Container } from 'inversify';
