@@ -94,7 +94,16 @@ const Demo: FunctionComponent = () => {
 
             newScene.addLayer(chinaPolygonLayer);
             newScene.addLayer(layer2);
-            newLayers.push(chinaPolygonLayer, layer2);
+            newLayers.push(
+              {
+                layer: chinaPolygonLayer,
+                img: 'https://mdn.alipayobjects.com/huamei_qa8qxu/afts/img/A*kIyZTok4Uk0AAAAAAAAAAAAADmJ7AQ/original',
+              },
+              {
+                layer: layer2,
+                img: 'https://mdn.alipayobjects.com/huamei_qa8qxu/afts/img/A*Z3JRQKDI-cIAAAAAAAAAAAAADmJ7AQ/original',
+              },
+            );
           }),
       ]).then(() => {
         const newControl = new LayerSwitch({
