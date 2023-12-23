@@ -112,3 +112,4 @@ fetch(
       });
     scene.addLayer(layer);
   });
+
